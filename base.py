@@ -8,10 +8,7 @@ SAMPLE_SIZES = [10, 100, 1000, 10000]
 OUTPUT_DIR = "histograms"
 
 class BaseDistribution(ABC):
-    """Abstract the base/blueprint for all distributions
-    Each distribution subclass does the following functions:
-    -
-    """
+    """Abstract the base/blueprint for all distributions"""
 
     def __init__(self, seed: int):
         self.seed = seed
