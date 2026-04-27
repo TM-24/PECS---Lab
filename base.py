@@ -40,7 +40,7 @@ class BaseDistribution(ABC):
         gs = gridspec.GridSpec(2, 2, figure=fig, hspace=0.45, wspace=0.35)
 
         for idx, n in enumerate(SAMPLE_SIZES):
-            self.rng = np.random.default_rng(self.seed)  # re-seed for reproducibility
+            self.rng = np.random.default_rng(self.seed) 
             samples = self.generate(n)
 
             ax = fig.add_subplot(gs[idx // 2, idx % 2])
